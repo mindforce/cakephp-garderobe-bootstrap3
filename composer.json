@@ -1,7 +1,21 @@
 {
     "name": "mindforce/cakephp-garderobe-bootstrap3",
     "description": "Garderobe Bootstrap3 plugin for CakePHP",
-    "type": "cakephp-plugin",
+	"homepage": "http://mindforce.me",
+	"keywords": ["cakephp", "ui", "Bootstrap"],
+	"type": "cakephp-plugin",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Denys Kyselov",
+			"homepage": "https://mindforce.me"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/mindforce/cakephp-garderobe-bootstrap3/issues",
+		"source": "https://github.com/mindforce/cakephp-garderobe-bootstrap3"
+	},
+	"minimum-stability": "dev",
     "require": {
         "php": ">=5.4",
         "cakephp/plugin-installer": "*",
