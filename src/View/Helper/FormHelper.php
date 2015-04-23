@@ -27,8 +27,8 @@ class FormHelper extends BaseFormHelper {
 	public $helpers = [
 		'Url',
 		'Html' => [
-			'className' => 'Garderobe.Bootstrap3Html',
-			'templates' => 'Garderobe.Bootstrap3/html.php',
+		    'className' => 'Garderobe/Bootstrap3.Html',
+		    'templates' => 'Garderobe/Bootstrap3.html',
 		]
 	];
 
