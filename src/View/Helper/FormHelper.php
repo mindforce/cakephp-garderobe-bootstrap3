@@ -11,7 +11,7 @@
  */
 namespace Garderobe\Bootstrap3\View\Helper;
 
-use Cake\View\Helper\FormHelper as BaseFormHelper;
+use BootstrapUI\View\Helper\FormHelper as BaseFormHelper;
 use Cake\Utility\Inflector;
 
 /**
@@ -28,7 +28,6 @@ class FormHelper extends BaseFormHelper {
 		'Url',
 		'Html' => [
 		    'className' => 'Garderobe/Bootstrap3.Html',
-		    'templates' => 'Garderobe/Bootstrap3.html',
 		]
 	];
 
@@ -49,7 +48,7 @@ class FormHelper extends BaseFormHelper {
  */
 	public function button($title, array $options = array()) {
 		if(isset($options['icon'])){
-			$title = $this->Html->icon('', ['class' => $options['icon']]).' '.$title;
+			$title = $this->Html->icon($options['icon']).' '.$title;
 			unset($options['icon']);
 			$options['escape'] = false;
 		}

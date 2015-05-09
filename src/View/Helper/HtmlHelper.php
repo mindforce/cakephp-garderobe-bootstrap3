@@ -11,7 +11,7 @@
  */
 namespace Garderobe\Bootstrap3\View\Helper;
 
-use Cake\View\Helper\HtmlHelper as BaseHtmlHelper;
+use BootstrapUI\View\Helper\HtmlHelper as BaseHtmlHelper;
 use Cake\View\Helper\StringTemplateTrait;
 
 /**
@@ -48,7 +48,7 @@ class HtmlHelper extends BaseHtmlHelper {
  */
 	public function link($title, $url = null, array $options = array()) {
 		if(isset($options['icon'])){
-			$title = $this->icon('', ['class' => $options['icon']]).' '.$title;
+			$title = $this->icon($options['icon']).' '.$title;
 			unset($options['icon']);
 			$options['escape'] = $options['escapeTitle'] = false;
 		}
@@ -71,23 +71,19 @@ class HtmlHelper extends BaseHtmlHelper {
  */
 	public function tag($name, $text = null, array $options = array()) {
 		if(isset($options['icon'])){
-			$text = $this->icon('', ['class' => $options['icon']]).' '.$text;
+			$text = $this->icon($options['icon']).' '.$text;
 			unset($options['icon']);
 		}
 
 		return parent::tag($name, $text, $options);
 	}
 
-	public function icon($text = null, array $options = array()){
-
-		if(!isset($options['class']))
-			$options['class'] = 'fa-question';
-		$options['class'] = 'fa '.$options['class'];
-
-		return $this->formatTemplate('icon', [
-			'attrs' => $this->templater()->formatAttributes($options),
-			'content' => $text,
-		]);
-	}
-
+    public function icon($name, array $options = [])
+    {
+        //TODO: make icon agnostic and as helper config option
+        if(!isset($options['iconSet'])){
+            $options['iconSet'] = 'fa';
+        }
+        return parent::icon($name, $options);
+    }
 }

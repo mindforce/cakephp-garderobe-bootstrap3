@@ -10,9 +10,6 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 $config = [
-	//Standard Widgets override
-	'multicheckbox' => ['Garderobe\Bootstrap3\View\Widget\MultiCheckbox', 'label'],
-	'radio' => ['Garderobe\Bootstrap3\View\Widget\Radio', 'label'],
 	//Garderobe specific fields
 	'static' => ['Garderobe\Bootstrap3\View\Widget\StaticBox'],
 ];

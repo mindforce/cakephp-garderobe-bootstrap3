@@ -10,7 +10,9 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 use Cake\Core\Configure;
+use Cake\Core\Plugin;
 
+Plugin::load('BootstrapUI');
 Configure::write('Garderobe.Plugin.Bootstrap3', [
     'name' => 'Garderobe/Bootstrap3',
     'helpers' => [
@@ -18,15 +20,16 @@ Configure::write('Garderobe.Plugin.Bootstrap3', [
             'className' => 'Garderobe/Bootstrap3.Form',
             'errorClass' => 'has-error',
             'widgets' => 'Garderobe/Bootstrap3.widgets',
-            'templateClass' => 'Garderobe\Bootstrap3\View\StringTemplate',
             'templates' => 'Garderobe/Bootstrap3.form',
         ],
         'Html' => [
 		    'className' => 'Garderobe/Bootstrap3.Html',
-		    'templates' => 'Garderobe/Bootstrap3.html',
         ],
         'Paginator' => [
-		    'templates' => 'Garderobe/Bootstrap3.paginator',
+            'templates' => 'Garderobe/Bootstrap3.paginator',
+        ],
+        'Flash' => [
+          'className' => 'BootstrapUI.Flash',
         ]
     ]
 ]);
