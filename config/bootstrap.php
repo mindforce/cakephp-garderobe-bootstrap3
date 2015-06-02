@@ -12,7 +12,13 @@
 use Cake\Core\Configure;
 use Cake\Core\Plugin;
 
-Plugin::load('BootstrapUI');
+Plugin::loadAll([
+    ['ignoreMissing' => true, 'bootstrap' => true],
+    'BootstrapUI',
+    'Garderobe/Core',
+    'Garderobe/Jquery',
+]);
+
 Configure::write('Garderobe.Plugin.Bootstrap3', [
     'name' => 'Garderobe/Bootstrap3',
     'helpers' => [
