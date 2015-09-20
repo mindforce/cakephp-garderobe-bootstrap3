@@ -13,7 +13,7 @@ use Cake\Core\Configure;
 use Cake\Core\Plugin;
 
 Plugin::loadAll([
-    ['ignoreMissing' => true, 'bootstrap' => true],
+    ['ignoreMissing' => true, 'bootstrap' => true, 'routes' => true],
     'BootstrapUI',
     'Garderobe/Core',
     'Garderobe/Jquery',
