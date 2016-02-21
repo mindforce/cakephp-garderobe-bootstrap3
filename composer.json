@@ -17,12 +17,14 @@
 	},
 	"minimum-stability": "dev",
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.5.9",
         "cakephp/plugin-installer": "*",
-        "cakephp/cakephp": "3.0.*",
+        "cakephp/cakephp": "~3.2",
+        "mindforce/cakephp-garderobe": "*",
         "friendsofcake/bootstrap-ui": "0.3.*",
-        "mindforce/cakephp-garderobe-jquery": "*",
-        "mindforce/cakephp-garderobe-font-awesome": "*"
+        "components/jquery": "~1.11",
+        "components/bootstrap": "~3.3",
+        "components/font-awesome": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
