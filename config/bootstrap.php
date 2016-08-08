@@ -34,7 +34,8 @@ Configure::write('Garderobe.Plugin.Bootstrap3', [
             'templates' => 'Garderobe/Bootstrap3.paginator',
         ],
         'Flash' => [
-          'className' => 'BootstrapUI.Flash',
+            'className' => 'BootstrapUI.Flash',
+            'element' => 'Garderobe/Bootstrap3.Flash/default'
         ]
     ]
 ]);
