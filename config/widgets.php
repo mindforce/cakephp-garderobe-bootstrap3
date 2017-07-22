@@ -12,4 +12,5 @@
 $config = [
 	//Garderobe specific fields
 	'static' => ['Garderobe\Bootstrap3\View\Widget\StaticBox'],
+    '_default' => 'Garderobe\Bootstrap3\View\Widget\BasicWidget',
 ];
