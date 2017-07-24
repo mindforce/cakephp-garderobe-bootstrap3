@@ -9,11 +9,12 @@
  * @since         0.0.1
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-$config = [
-    //Garderobe specific fields
-    'button'   => 'Garderobe\Bootstrap3\View\Widget\ButtonWidget',
-    'checkbox' => 'Garderobe\Bootstrap3\View\Widget\CheckboxWidget',
-    'radio'    => ['Garderobe\Bootstrap3\View\Widget\RadioWidget', 'nestingLabel'],
-    'static'   => 'Garderobe\Bootstrap3\View\Widget\StaticBox',
-    '_default' => 'Garderobe\Bootstrap3\View\Widget\BasicWidget',
-];
+namespace Garderobe\Bootstrap3\View\Helper;
+
+use BootstrapUI\View\Helper\PaginatorHelper as BootstrapUIPaginatorHelper;
+use Cake\View\View;
+
+class PaginatorHelper extends BootstrapUIPaginatorHelper
+{
+
+}
