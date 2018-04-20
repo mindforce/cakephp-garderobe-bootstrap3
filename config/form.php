@@ -10,5 +10,5 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 $config = [
-	'static' => '<p class="form-control-static {{class}}"{{attrs}}>{{value}}</p>',
+    'static' => '<p class="form-control-static {{class}}"{{attrs}}>{{value}}</p>',
 ];
